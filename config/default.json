@@ -1,0 +1,26 @@
+{
+	"sender": {
+		"bat": "",
+		"city": "",
+		"countryCode": "",
+		"email": "",
+		"floor": "",
+		"phoneNumber": "",
+		"postBox": "",
+		"postalCode": "",
+		"socialReason": "",
+		"streetLabelAndNumber": "",
+		"userFirstName": "",
+		"userLastName": "",
+		"isPro": true
+ },
+	"type":"",
+	"typeDetail": "",
+	"userStatus": "",
+	"recipientStatus": "",
+	"formEmail": "",
+	"certificate": "",
+	"license": "",
+	"referrer": "",
+	"altUrl": null
+}
