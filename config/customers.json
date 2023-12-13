@@ -1,0 +1,36 @@
+[
+	{
+		"pae":{
+			"usePae": true,
+			"parcelPaidAmount": 0,
+			"parcelNumber": "",
+			"referrer":""
+		},
+		"products": [
+			{
+				"SHNumber": "",
+				"originCountryCode": "",
+				"productDescription": "",
+				"productQuantity": 1,
+				"productValue": "0",
+				"productWeight": 0
+			}
+		],
+		"invoice": "",
+		"receiver": {
+			"bat": "",
+			"city": "",
+			"countryCode": "",
+			"email": "",
+			"floor": "",
+			"phoneNumber": "",
+			"postBox": "",
+			"postalCode": "",
+			"socialReason": "",
+			"streetLabelAndNumber": "",
+			"userFirstName": "",
+			"userLastName": "",
+			"isPro": false
+		}
+	}
+]
