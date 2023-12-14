@@ -44,7 +44,6 @@ readFile('./config/customers.json', 'utf8', async (error, data) => {
 
 						const response = await request.json();
 						const documentBuffer = JSON.parse(response.pae.buffer)
-						console.log(response.pae.fileName)
 
 						appendFile(
 							`./${generatedCustomsFolder}/${customer.invoice}_${customer.receiver.userFirstName}-${customer.receiver.userLastName}_${response.pae.fileName}`,
