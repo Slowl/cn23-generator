@@ -3,8 +3,11 @@
 		"pae":{
 			"usePae": true,
 			"parcelPaidAmount": 0,
-			"parcelNumber": "",
-			"referrer":""
+			"parcelNumber": ""
+		},
+		"parcel": {
+			"parcelNumber": "LS137424120FR",
+			"natureOfTransaction": 3
 		},
 		"products": [
 			{
@@ -13,7 +16,7 @@
 				"productDescription": "",
 				"productQuantity": 1,
 				"productValue": "0",
-				"productWeight": 0
+				"productWeight": 0.1
 			}
 		],
 		"invoice": "",

@@ -16,11 +16,9 @@
  },
 	"type":"",
 	"typeDetail": "",
-	"userStatus": "",
-	"recipientStatus": "",
 	"formEmail": "",
 	"certificate": "",
 	"license": "",
-	"referrer": "",
+	"referrer": "60",
 	"altUrl": null
 }
