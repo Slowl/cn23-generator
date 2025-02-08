@@ -1,4 +1,5 @@
 /node_modules
 /app
+/template
 .DS_Store
 .vscode

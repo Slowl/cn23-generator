@@ -1,12 +1,12 @@
 [
 	{
-		"pae":{
+		"pae": {
 			"usePae": true,
 			"parcelPaidAmount": 0,
 			"parcelNumber": ""
 		},
 		"parcel": {
-			"parcelNumber": "LS137424120FR",
+			"parcelNumber": "",
 			"natureOfTransaction": 3
 		},
 		"products": [
@@ -15,21 +15,17 @@
 				"originCountryCode": "",
 				"productDescription": "",
 				"productQuantity": 1,
-				"productValue": "0",
-				"productWeight": 0.1
+				"productValue": "",
+				"productWeight": 0.12
 			}
 		],
 		"invoice": "",
 		"receiver": {
-			"bat": "",
 			"city": "",
 			"countryCode": "",
 			"email": "",
-			"floor": "",
 			"phoneNumber": "",
-			"postBox": "",
 			"postalCode": "",
-			"socialReason": "",
 			"streetLabelAndNumber": "",
 			"userFirstName": "",
 			"userLastName": "",
