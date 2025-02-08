@@ -1,4 +1,4 @@
-import { appendFile, existsSync, mkdir, readFile } from 'fs';
+import { appendFile, existsSync, mkdir, readFile } from 'node:fs';
 import type { CustomersType } from './config/customersType.ts';
 import defaultConfiguration from './config/default.json' assert { type: 'json' };
 
@@ -25,6 +25,7 @@ readFile('./config/customers.json', { encoding: 'utf8' }, (error, data) => {
 					try {
 						console.log(`\x1b[32m [n°${index + 1}] - fetching for ${customer.receiver.userFirstName}-${customer.receiver.userLastName}... \x1b[0m`);
 						const request = await fetch('https://cn23.laposte.fr/form?lang=fr', {
+							'credentials': 'include',
 							'headers': {
 								'accept': 'application/json, text/plain, */*',
 								'accept-language': 'en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7',
@@ -40,8 +41,10 @@ readFile('./config/customers.json', { encoding: 'utf8' }, (error, data) => {
 								'Referer': 'https://cn23.laposte.fr/parcours/recapitulatif',
 								'Referrer-Policy': 'strict-origin-when-cross-origin',
 							},
+							'referrer': 'https://cn23.laposte.fr/parcours/recapitulatif',
 							'body': JSON.stringify(documentData),
 							'method': 'POST',
+							'mode': 'cors',
 						});
 
 						const response = await request.json();
@@ -49,6 +52,7 @@ readFile('./config/customers.json', { encoding: 'utf8' }, (error, data) => {
 
 						appendFile(
 							`./${generatedCustomsFolder}/${customer.invoice}_${customer.receiver.userFirstName}-${customer.receiver.userLastName}_${response.pae.fileName}`,
+							//@ts-ignore
 							Buffer.from(documentBuffer.data),
 							(error: any) => error && console.error('\x1b[31m Error while creating the file: ', error),
 						);
